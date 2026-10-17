@@ -1,0 +1,1 @@
+window.POSTPUNK_YT = {};

@@ -1,0 +1,60 @@
+POSTPUNK.chapter({ n: 4, title: 'Entretenimiento militante: Gang of Four, The Mekons y la escena de Leeds' });
+POSTPUNK.add([
+  { id: 'gang-of-four', name: 'Gang of Four', family: 'vanguardia', start: 1977, end: 1983, place: 'Leeds',
+    desc: 'Estudiantes del departamento de Bellas Artes de la Universidad de Leeds (T. J. Clark, ex situacionista; Terry Atkinson, de Art and Language) que llevan Brecht, Godard y Gramsci al rock: un meta-rock autocrítico. De la admiración por Dr. Feelgood pasan al punk funk con el bajo de Dave Allen: guitarra astillada de Andy Gill con amplificadores a transistores («Gang of Four estaba en contra del calor»), anti-solos, nada de zapadas, todo a pie de igualdad como en el funk de James Brown. Damaged Goods (Fast Product, 1978) desmenuza el amor con el lenguaje del comercio; con EMI se niegan a cambiar «rubbers» en Top of the Pops y Entertainment! (1979), seco y sin reverb, es una de las obras maestras del postpunk. Solid Gold (1981) rockea más. Su gran legado florece en Estados Unidos: Red Hot Chili Peppers, Minutemen, Fugazi, Big Black, Rage Against the Machine, The Rapture.',
+    artists: ['Gang of Four', 'Andy Gill', 'Jon King', 'Dave Allen', 'Hugo Burnham'],
+    labels: ['Fast Product', 'EMI', 'The Fenton (pub)', 'F-Club (Leeds)'],
+    tracks: [
+      { a: 'Gang of Four', t: 'Damaged Goods', y: 1978, ess: 1 },
+      { a: 'Gang of Four', t: 'Love Like Anthrax', y: 1978 },
+      { a: 'Gang of Four', t: 'At Home He\'s a Tourist', y: 1979 },
+      { a: 'Gang of Four', t: 'Entertainment!', y: 1979, ess: 1 },
+      { a: 'Gang of Four', t: 'Natural\'s Not In It', y: 1979 },
+      { a: 'Gang of Four', t: 'Contract', y: 1979 },
+      { a: 'Gang of Four', t: 'Not Great Men', y: 1979 },
+      { a: 'Gang of Four', t: 'Guns Before Butter', y: 1979 },
+      { a: 'Gang of Four', t: 'Solid Gold', y: 1981 },
+      { a: 'Gang of Four', t: 'Paralysed', y: 1981 },
+      { a: 'Gang of Four', t: 'What We All Want', y: 1981 },
+      { a: 'Gang of Four', t: 'He\'d Send in the Army', y: 1981 },
+    ],
+    influences: ['pub-rock', 'funk', 'punk-77', 'fast-product'],
+    refs: [
+      { q: 'Absorbiendo esta sensibilidad, The Mekons y Gang of Four crearían una especie de meta-rock' },
+      { q: 'Gang of Four estaba en contra del \'calor\'' },
+      { q: 'Detrás del director/provocador y de la banda de funk política y agitadora yacía una fuente en común' },
+      { q: 'Una de las obras maestras definitorias del postpunk' },
+      { q: 'su mayor legado a largo plazo florecería en los Estados Unidos' },
+    ] },
+  { id: 'mekons-leeds', name: 'The Mekons, Delta 5 y Au Pairs', family: 'vanguardia', start: 1977, end: 1983, place: 'Leeds y Birmingham',
+    aka: ['The Mekons', 'Delta 5', 'Au Pairs'],
+    desc: 'La otra cara del colectivo de Leeds: The Mekons, casi una cooperativa con Gang of Four, llevan más lejos que nadie el «cualquiera puede hacerlo» (un sillón con la palabra «nave espacial» en el escenario, nada de fotos ni apellidos). «Never Been in a Riot», primer single de Fast Product, desmonta la pose de guerrilla urbana de The Clash; «Where Were You?» vende 27.500 copias, pero el salto a Virgin les deja sin rumbo. Delta 5, nacidas de The Mekons, con dos bajos y canciones de autonomía feminista desafiante («Mind Your Own Business», «You»), y los Au Pairs de Birmingham («Come Again») llevan el funk agitador a la política de las relaciones: «lo personal es político». Todo frente a la ultraderecha que hacía de Leeds su bastión (National Front, Rock Against Communism).',
+    artists: ['The Mekons', 'Tom Greenhalgh', 'Kevin Lycett', 'Mark White', 'Jon Langford', 'Delta 5', 'Ros Allen', 'Bethan Peters', 'Julz Sale', 'Au Pairs', 'Lesley Woods', 'Paul Foad'],
+    labels: ['Fast Product', 'Virgin', 'Rough Trade', 'F-Club (Leeds)'],
+    tracks: [
+      { a: 'The Mekons', t: 'Never Been in a Riot', y: 1978, ess: 1 },
+      { a: 'The Mekons', t: 'Where Were You?', y: 1978 },
+      { a: 'The Mekons', t: 'The Quality of Mercy Is Not Strnen', y: 1979 },
+      { a: 'Delta 5', t: 'Mind Your Own Business', y: 1979 },
+      { a: 'Delta 5', t: 'You', y: 1980 },
+      { a: 'Au Pairs', t: 'Come Again', y: 1981 },
+      { a: 'Au Pairs', t: 'Playing with a Different Sex', y: 1981 },
+    ],
+    influences: ['diy', 'gang-of-four', 'punk-77'],
+    refs: [
+      { q: 'La versión del rock democratizado de The Mekons no era exactamente la misma que la de Gang of Four' },
+      { q: 'Un pandemónium de guitarras crudas y baterías cavernícolas' },
+      { q: 'Las mujeres de Delta 5, por el contrario, solían escribir desde una postura desafiante' },
+      { q: 'Su canción más famosa, "Come Again", retrata a una pareja de ideología igualitaria' },
+    ] },
+  { id: 'pub-rock',
+    note: 'Dr. Feelgood y la guitarra rítmica entrecortada de Wilko Johnson unían a los futuros Gang of Four, que buscaban bajista para una banda «de rhythm & blues rápido».',
+    artists: ['Dr. Feelgood', 'Wilko Johnson'],
+    tracks: [{ a: 'Dr. Feelgood', t: 'Down by the Jetty', y: 1975 }],
+    refs: [{ q: 'Siguiendo el estilo dentado y entrecortado de las guitarras rítmicas' }] },
+], 4);
+
+// Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
+POSTPUNK.add([
+  { id: 'gang-of-four', tracks: [{ a: 'Gang of Four', t: 'Outside the Trains Don\'t Run on Time', y: 1981 }, { a: 'Gang of Four', t: 'Cheeseburger', y: 1981 }, { a: 'Gang of Four', t: 'Glass', y: 1979 }] },
+], 4);

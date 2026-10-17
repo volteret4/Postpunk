@@ -1,0 +1,68 @@
+POSTPUNK.chapter({ n: 22, title: 'Tomar por asalto el siglo XX: ZTT, The Art of Noise y Frankie Goes to Hollywood' });
+POSTPUNK.add([
+  { id: 'hip-hop', name: 'Hip hop y la llegada del sampler', family: 'negra', start: 1979, end: 1988, place: 'Nueva York (el Bronx) y Londres',
+    desc: 'Los DJ del Bronx aíslan y extienden los «breaks» de la música funk y disco: para McLaren, que hace un safari por el Bronx guiado por Michael Holman en 1981, el hip hop es «punk negro» y folklore urbano, piratería cultural pura. «Buffalo Gals» (1982), con el World\'s Famous Supreme Team, lleva el scratch al pop mainstream y siembra el jungle y el trip hop; Duck Rock mezcla Soweto, los Apalaches y el Bronx. Art of Noise inventa sin querer los breakbeats sampleados con el Fairlight antes que Marley Marl; ESG, Liquid Liquid y Art of Noise acaban entre los más sampleados del rap.',
+    artists: ['Afrika Bambaataa', 'Grandmaster Flash', 'World\'s Famous Supreme Team', 'Malcolm McLaren', 'Michael Holman', 'Marley Marl', 'Big Daddy Kane'],
+    tracks: [
+      { a: 'Malcolm McLaren', t: 'Buffalo Gals', y: 1982, ess: 1 },
+      { a: 'Malcolm McLaren', t: 'Duck Rock', y: 1983 },
+      { a: 'Malcolm McLaren', t: 'Double Dutch', y: 1983 },
+      { a: 'Malcolm McLaren', t: 'Madam Butterfly', y: 1984 },
+      { a: 'Big Daddy Kane', t: 'Ain\'t No Half-Steppin\'', y: 1988 },
+    ],
+    influences: ['funk', 'postdisco', 'reggae-dub'],
+    refs: [{ q: 'emprendió una suene de safari etnomusicológico por el sur del Bronx' }, { q: 'En la cultura dance del Reino Unido, "Buffalo Gals" es considerado hoy un himno del hip-hop' }] },
+  { id: 'ztt', name: 'ZTT: Art of Noise y Propaganda', family: 'newpop', start: 1983, end: 1986, place: 'Londres',
+    aka: ['Zang Tuum Tumb', 'The Art of Noise'],
+    desc: 'El sello de Trevor Horn y su esposa Jill Sinclair, con Paul Morley, harto del periodismo, como director artístico, redactor de manifiestos y saqueador del futurismo (el nombre viene de Marinetti vía Russolo): series «Acción» e «Incidental», guerra al new pop descarriado. Art of Noise (Anne Dudley, J. J. Jeczalik, Gary Langan) nace del aburrimiento durante la grabación de 90125 de Yes, metiendo un break de batería entero en el Fairlight: Into Battle with the Art of Noise, «Beat Box», «Moments in Love», «Close (to the Edit)». Anónimos, con llaves inglesas en lugar de fotos: hip hop como si se hubiera inventado en Europa en 1916, entre Dada y el futuro big beat. Propaganda, de Düsseldorf, eurodisco épico de los «hijos de Fritz Lang y Giorgio Moroder» (A Secret Wish, «Duel»). La marca acaba comiéndose el producto y los artistas huyen de sus contratos leoninos.',
+    artists: ['Trevor Horn', 'Paul Morley', 'Jill Sinclair', 'The Art of Noise', 'Anne Dudley', 'J. J. Jeczalik', 'Gary Langan', 'Propaganda', 'Claudia Brücken', 'Ralf Dörper', 'Grace Jones'],
+    labels: ['ZTT', 'SARM Studios', 'Fairlight CMI'],
+    tracks: [
+      { a: 'The Art of Noise', t: 'Into Battle with the Art of Noise', y: 1983, ess: 1 },
+      { a: 'The Art of Noise', t: 'Beat Box', y: 1983 },
+      { a: 'The Art of Noise', t: 'Moments in Love', y: 1983 },
+      { a: 'The Art of Noise', t: 'Close (to the Edit)', y: 1984 },
+      { a: 'The Art of Noise', t: 'Who\'s Afraid of the Art of Noise?', y: 1984 },
+      { a: 'Propaganda', t: 'Dr. Mabuse', y: 1984 },
+      { a: 'Propaganda', t: 'Duel', y: 1985 },
+      { a: 'Propaganda', t: 'A Secret Wish', y: 1985 },
+      { a: 'Grace Jones', t: 'Slave to the Rhythm', y: 1985 },
+      { a: 'Yes', t: '90125', y: 1983 },
+    ],
+    influences: ['abc', 'hip-hop', 'eurodisco', 'new-pop', 'daf'],
+    refs: [
+      { q: 'Crear una identidad para el sello de Horn' },
+      { q: 'Zang Tuum Tumb era una frase que Morley había encontrado en el manifiesto que Luigi Russolo publicó' },
+      { q: 'Esta práctica se volvería esencial para la banda' },
+      { q: 'Art of Noise y ZTT, en general, representaban la gran fantasía de Morley' },
+      { q: 'Ese es el defecto de todos los sellos discográficos con una identidad muy marcada' },
+    ] },
+  { id: 'frankie', name: 'Frankie Goes to Hollywood', family: 'newpop', start: 1982, end: 1987, place: 'Liverpool',
+    desc: 'Veteranos de la escena glam punk del Eric\'s (Holly Johnson de Big in Japan, Paul Rutherford de los Spitfire Boys) más «the lads», con imagen sadomasoquista y homosexualidad declarada: los «Disco Pistols». Atrapados en un contrato humillante con ZTT, Horn graba «Relax» (1983) casi sin ellos, a ritmo de Hi-NRG con Fairlight y Linn sincronizados; la prohibición de la BBC la lleva al número uno. Morley planea una trilogía sobre sexo, guerra y religión: «Two Tribes» (nueve semanas en el número uno, con camisetas «FRANKIE SAY»), «The Power of Love». Welcome to the Pleasuredome decepciona, Estados Unidos los ve como unos Village People y acaban sin fans de verdad: anuncio del regreso de las boy bands. «¿No tuvieron alguna vez la sensación de que los engañaron?»',
+    artists: ['Frankie Goes to Hollywood', 'Holly Johnson', 'Paul Rutherford', 'Peter Gill', 'Mark O\'Toole', 'Brian Nash', 'Bronski Beat', 'Dead or Alive'],
+    labels: ['ZTT', 'Perfect Songs'],
+    tracks: [
+      { a: 'Frankie Goes to Hollywood', t: 'Relax', y: 1983, ess: 1 },
+      { a: 'Frankie Goes to Hollywood', t: 'Two Tribes', y: 1984, ess: 1 },
+      { a: 'Frankie Goes to Hollywood', t: 'The Power of Love', y: 1984 },
+      { a: 'Frankie Goes to Hollywood', t: 'Welcome to the Pleasuredome', y: 1984 },
+      { a: 'Frankie Goes to Hollywood', t: 'Liverpool', y: 1986 },
+      { a: 'Bronski Beat', t: 'Smalltown Boy', y: 1984 },
+    ],
+    influences: ['ztt', 'big-music', 'eurodisco', 'punk-77', 'daf'],
+    refs: [
+      { q: 'Horn vio a Frankie Goes to Hollywood por primera vez en un nuevo programa de televisión inglés llamado The Tube' },
+      { q: '"Relax" sonaba colosal' },
+      { q: 'Frankie Goes to Hollywood se había convertido en el grupo inglés más exitoso de los ochenta' },
+      { q: 'En cierto sentido, Frankie Goes to Hollywood puede verse como el último eslabón en la cadena de la revolución punk' },
+    ] },
+  { id: 'big-music',
+    note: 'Liverpool, glam punk del Eric\'s: Big in Japan (Jayne Casey, Budgie, Holly Johnson, Ian Broudie, Dave Balfe) era una «explosión de color» de la que todos sus miembros acabarían llegando al estrellato.' },
+], 22);
+
+// Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
+POSTPUNK.add([
+  { id: 'frankie', tracks: [{ a: 'Frankie Goes to Hollywood', t: 'Krisco Kisses', y: 1984 }, { a: 'Frankie Goes to Hollywood', t: 'Black Night White Light', y: 1984 }, { a: 'Frankie Goes to Hollywood', t: 'The Only Star in Heaven', y: 1984 }, { a: 'Frankie Goes to Hollywood', t: 'Born to Run', y: 1984 }] },
+  { id: 'ztt', tracks: [{ a: 'Propaganda', t: 'p:Machinery', y: 1985 }] },
+  { id: 'second-invasion', tracks: [{ a: 'Band Aid', t: 'Do They Know It\'s Christmas?', y: 1984 }] },
+], 22);

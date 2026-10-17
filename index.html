@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postpunk: timeline</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Postpunk <span>· romper todo y empezar de nuevo (1978-1984), según Simon Reynolds</span></h1>
+    <p class="sub">Timeline de escenas, influencias, discos y canciones, construido capítulo a capítulo a partir de <i>Postpunk. Romper todo y empezar de nuevo</i> (Simon Reynolds; Caja Negra, 2016), con citas del libro y su vídeo en YouTube.</p>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<nav class="controls">
+  <input id="q" type="search" placeholder="Buscar escena, artista, disco, canción…" autocomplete="off">
+  <button id="ftoggle" class="ftoggle" type="button" aria-expanded="false">Filtros</button>
+  <div class="views" role="tablist">
+    <button data-view="timeline" class="on">Timeline</button>
+    <button data-view="focus">Individual</button>
+    <button data-view="list">Escenas</button>
+    <button data-view="discs">Discos</button>
+    <button data-view="ess">Discos clave</button>
+    <button data-view="bych">Capítulos</button>
+  </div>
+  <div class="families" id="families"></div>
+</nav>
+
+<main>
+  <section id="timeline" class="view on">
+    <p class="hint"><span class="mouse">Pasa el ratón por una escena para ver de dónde viene (líneas entrantes) y qué engendra (salientes). Clic para abrir la ficha; clic en una zona vacía para cerrarla.</span><span class="touch">Desliza para recorrer los años; toca una escena para abrir su ficha.</span></p>
+    <div class="scroller" id="scroller"><svg id="svg"></svg></div>
+  </section>
+  <section id="focus" class="view">
+    <div class="fbar">
+      <input id="fq" type="search" list="focus-names" placeholder="Elige una escena…" autocomplete="off">
+      <datalist id="focus-names"></datalist>
+      <button id="freset" type="button">Reiniciar</button>
+    </div>
+    <p class="hint" id="fhint">Escribe y elige una escena: verás de cuáles viene y a cuáles influye. Pulsa «+» en cualquiera de ellas para desplegar también sus relaciones; clic en una escena abre su ficha.</p>
+    <div class="scroller" id="fscroller"><svg id="fsvg"></svg></div>
+  </section>
+  <section id="list" class="view"></section>
+  <section id="discs" class="view discs"></section>
+  <section id="ess" class="view discs"></section>
+  <section id="bych" class="view discs"></section>
+</main>
+
+<aside id="panel" aria-hidden="true">
+  <button class="close" id="close" aria-label="Cerrar">×</button>
+  <div id="detail"></div>
+</aside>
+
+<script src="data/core.js"></script>
+<!-- capitulos:inicio -->
+<script src="data/00-prologo.js"></script>
+<script src="data/01-pil.js"></script>
+<script src="data/02-diy.js"></script>
+<script src="data/03-bristol.js"></script>
+<script src="data/04-leeds.js"></script>
+<script src="data/05-ohio.js"></script>
+<script src="data/06-sheffield.js"></script>
+<script src="data/07-manchester.js"></script>
+<script src="data/08-industrial.js"></script>
+<script src="data/09-no-wave.js"></script>
+<script src="data/10-art-punk.js"></script>
+<script src="data/11-london-avant.js"></script>
+<script src="data/12-san-francisco.js"></script>
+<script src="data/13-pil-metal-box.js"></script>
+<script src="data/14-two-tone.js"></script>
+<script src="data/15-mclaren.js"></script>
+<script src="data/16-mutant-disco.js"></script>
+<script src="data/17-escocia.js"></script>
+<script src="data/18-synthpop.js"></script>
+<script src="data/19-new-pop.js"></script>
+<script src="data/20-mtv.js"></script>
+<script src="data/21-gotico.js"></script>
+<script src="data/22-ztt.js"></script>
+<script src="data/23-epilogo.js"></script>
+<!-- capitulos:fin -->
+<script src="data/refs.js"></script>
+<script src="data/yt.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+POSTPUNK.chapter({ n: 6, title: 'Vivir el futuro: Cabaret Voltaire, The Human League y la escena de Sheffield' });
+POSTPUNK.add([
+  { id: 'electronica-70', name: 'Electrónica de los setenta', family: 'raices', start: 1968, end: 1978, place: 'EE UU y Europa',
+    aka: ['música concreta', 'Moog'],
+    desc: 'La primera dosis de electrónica extrema para los chicos de Sheffield fue la banda sonora de Walter Carlos para La naranja mecánica; antes solo había atisbos en el Moog de Keith Emerson y los chorros de ruido de Eno en Roxy Music. Detrás asoman la música concreta, Morton Subotnick y los paisajes de Tangerine Dream.',
+    artists: ['Walter Carlos', 'Morton Subotnick', 'Tangerine Dream', 'Keith Emerson'],
+    tracks: [
+      { a: 'Walter Carlos', t: 'A Clockwork Orange (BSO)', y: 1971 },
+      { a: 'Morton Subotnick', t: 'Silver Apples of the Moon', y: 1967 },
+      { a: 'Tangerine Dream', t: 'Phaedra', y: 1974 },
+    ],
+    refs: [{ q: 'esta era sencillamente la primera vez que la gran mayoría de los chicos de Sheffield escuchaban música electrónica en verdad extrema' }] },
+  { id: 'sheffield', name: 'Sheffield: Meatwhistle y los estetas del glam', family: 'industrial', start: 1972, end: 1978, place: 'Sheffield',
+    desc: 'En la «República Popular de Yorkshire del Sur», donde lo rebelde era hacerse artista, una juventud hambrienta de glam, Roxy Music, ciencia ficción y La naranja mecánica se forma en Meatwhistle, un teatro juvenil financiado por el ayuntamiento convertido en laboratorio pop: Musical Vomit (shock rock a lo Alice Cooper, «la primera banda punk de Gran Bretaña» según Poly Styrene), bandas imaginarias de una noche y la parodia punk The Studs. No hubo bandas punk en Sheffield: The Future (Marsh, Ware, Adi Newton) quería «destruir el rock\'n\'roll» con sintetizadores de kit y letras generadas por CARLOS, un programa aleatorio; de ahí salen The Human League y Clock DVA.',
+    artists: ['Musical Vomit', 'The Future', 'Ian Craig Marsh', 'Martyn Ware', 'Adi Newton', 'Clock DVA', '2.3', 'Paul Bower', 'Glenn Gregory'],
+    labels: ['Meatwhistle', 'Gun Rubber (fanzine)', 'The Crazy Daisy', 'The Limit'],
+    tracks: [
+      { a: 'The Future', t: 'Blank Clocks', y: 1977 },
+      { a: 'The Future', t: 'Dancevision', y: 1977 },
+      { a: '2.3', t: 'Where to Now?', y: 1978 },
+    ],
+    influences: ['glam-art', 'electronica-70', 'krautrock', 'eurodisco'],
+    refs: [
+      { q: 'Financiado por el gobierno municipal, el colectivo Meatwhistle terminó transformándose' },
+      { q: 'Cuando armamos The Future, nuestra misión definitivamente era destruir el rock' },
+      { q: '"Dancevision", con sus trémulos destellos de luces de neón' },
+    ] },
+  { id: 'cabaret-voltaire', name: 'Cabaret Voltaire', family: 'industrial', start: 1973, end: 1984, place: 'Sheffield',
+    desc: 'Un «grupo sonoro» de música concreta casera en el ático de Chris Watson, con Richard H. Kirk y Stephen Mallinder: el nombre del club de Zúrich de Tzara y Hugo Ball, los cut-ups de Burroughs y Gysin, loops de cinta, un clarinete procesado y una caja de ritmos Farfisa. Su primer concierto (1975) acabó en batalla campal. Con el estudio propio de Western Works, modelo de «microcapitalismo postsocialista», graban para Rough Trade una racha clásica hasta 1982: Extended Play, «Nag Nag Nag», «Silent Command», The Voice of America, Three Mantras, Red Mecca. Death disco y «skank soviético», la voz reptiliana de Mallinder, la guitarra de cromo ardiente de Kirk y una política anarco-paranoica: pop art del lado oscuro, pionero del sampleo de cine y televisión.',
+    artists: ['Cabaret Voltaire', 'Richard H. Kirk', 'Stephen Mallinder', 'Chris Watson'],
+    labels: ['Rough Trade', 'Western Works'],
+    tracks: [
+      { a: 'Cabaret Voltaire', t: 'Extended Play', y: 1978 },
+      { a: 'Cabaret Voltaire', t: 'Nag Nag Nag', y: 1979, ess: 1 },
+      { a: 'Cabaret Voltaire', t: 'Silent Command', y: 1979 },
+      { a: 'Cabaret Voltaire', t: 'Seconds Too Late', y: 1980 },
+      { a: 'Cabaret Voltaire', t: 'Jazz the Glass', y: 1980 },
+      { a: 'Cabaret Voltaire', t: 'The Voice of America', y: 1980 },
+      { a: 'Cabaret Voltaire', t: 'Three Mantras', y: 1980 },
+      { a: 'Cabaret Voltaire', t: 'Red Mecca', y: 1981, ess: 1 },
+      { a: 'Cabaret Voltaire', t: 'Sluggin\' fer Jesus', y: 1981 },
+      { a: 'Cabaret Voltaire', t: 'Methodology \'74/\'78: Attic Tapes', y: 2002 },
+    ],
+    influences: ['sheffield', 'glam-art', 'krautrock', 'reggae-dub', 'electronica-70'],
+    refs: [
+      { q: 'la banda era algo así como un "grupo sonoro" que se dedicaba a la m usique concrete' },
+      { q: 'El 13 de mayo de 1975, Cabaret Voltaire dio su primer recital ante una sala llena de estudiantes pasmados' },
+      { q: 'Cabaret Voltaire estaba desarrollando, en 1978, el modelo para algo así como un microcapitalismo postsocialista' },
+      { q: 'El sonido definitivo de Cabaret Voltaire tomó forma en algún momento entre 1977 y 1978' },
+      { q: 'Si Cabaret Voltaire era algo así como pop art del lado oscuro' },
+    ] },
+  { id: 'human-league', name: 'The Human League', family: 'newpop', start: 1977, end: 1984, place: 'Sheffield',
+    desc: 'The Future rebautizado tras la llegada de Phil Oakey, camillero andrógino lector de Philip K. Dick: nada de guitarras, solo sintetizadores (un Korg 700S y un Roland System 100) y percusión esculpida a mano. «Being Boiled» (Fast Product, 1978), con su riff a lo Bootsy Collins mutante, y una cassettera bajo el foco en lugar de baterista; Adrian Wright como «director artístico» de diapositivas. Del art rock pasan al «art pop»: ABBA, eurodisco, Chic y covers electrónicos de los Righteous Brothers, contra la «profundidad» estudiantil. El EP The Dignity of Labour (1979), sobre el programa espacial soviético, y «Blind Youth» («Highrise living\'s not so bad») oponen optimismo al «no future».',
+    artists: ['The Human League', 'Phil Oakey', 'Martyn Ware', 'Ian Craig Marsh', 'Adrian Wright', 'Bob Last'],
+    labels: ['Fast Product', 'Virgin'],
+    tracks: [
+      { a: 'The Human League', t: 'Being Boiled', y: 1978, ess: 1 },
+      { a: 'The Human League', t: 'Circus of Death', y: 1978 },
+      { a: 'The Human League', t: 'The Dignity of Labour', y: 1979 },
+      { a: 'The Human League', t: 'Reproduction', y: 1979 },
+      { a: 'The Human League', t: 'Blind Youth', y: 1979 },
+      { a: 'The Human League', t: 'Almost Medieval', y: 1979 },
+      { a: 'The Human League', t: 'You\'ve Lost That Lovin\' Feelin\'', y: 1980 },
+    ],
+    influences: ['sheffield', 'eurodisco', 'krautrock', 'glam-art', 'fast-product'],
+    refs: [
+      { q: 'Escuchamos las primeras líneas -\'Listen to the voice of Buddha' },
+      { q: 'The Human League empezaba a desarrollar una nueva estética' },
+      { q: 'Salimos al escenario con una cassettera, con el ritmo y' },
+      { q: 'El EP The Dignity of Labour [La dignidad de los trabajadores] incluía cuatro traclcs instrumentales' },
+    ] },
+], 6);
+
+// Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
+POSTPUNK.add([
+  { id: 'cabaret-voltaire', tracks: [{ a: 'Cabaret Voltaire', t: 'The Set Up', y: 1978 }, { a: 'Cabaret Voltaire', t: 'Eastern Mantra', y: 1980 }] },
+], 6);

@@ -1,0 +1,78 @@
+POSTPUNK.chapter({ n: 19, title: 'Jugar para ganar: los pioneros del new pop' });
+POSTPUNK.add([
+  { id: 'new-pop', name: 'New pop', family: 'newpop', start: 1980, end: 1984, place: 'Reino Unido',
+    desc: 'El manifiesto de Paul Morley en el último NME de 1980: había que entrar en el mainstream para combatir el fuego con el fuego. Varios autores (Bob Last y The Human League, Alan Horne y Orange Juice, el sello Zoo de Liverpool con Teardrop Explodes) y unos valores compartidos: salud, prolijidad, dinamismo, ambición, frente a un sector independiente «cubierto de moho» y la música casera «ridícula». La sensibilidad pasa del modernismo postpunk (innovación absoluta) a un posmodernismo deudor del glam: artificio, androginia, covers y citas, la «euforia pasajera» del pop descartable y la caída de las oposiciones rockistas entre profundo y superficial, auténtico e inauténtico. CB1, la cassette de Rough Trade y NME (1981), es a la vez celebración y epitafio del postpunk. El «empresas de producción» sustituyen a las bandas.',
+    artists: ['Paul Morley', 'Teardrop Explodes', 'Julian Cope', 'Dollar', 'Trevor Horn', 'The Buggles'],
+    labels: ['Zoo', 'NME', 'Smash Hits'],
+    tracks: [
+      { a: 'Varios', t: 'C81', y: 1981 },
+      { a: 'The Buggles', t: 'Video Killed the Radio Star', y: 1979 },
+      { a: 'Dollar', t: 'Hand Held in Black and White', y: 1981 },
+      { a: 'Dollar', t: 'Mirror Mirror (Mon Amour)', y: 1981 },
+      { a: 'The Teardrop Explodes', t: 'Reward', y: 1981 },
+    ],
+    influences: ['glam-art', 'postcard', 'human-league', 'two-tone'],
+    refs: [
+      { q: 'básicamente, era un manifiesto del "new pop"' },
+      { q: 'Es posible que Morley haya acuñado el término, pero el "new pop" como concepto tiene varios autores' },
+      { q: 'A pesar de sus defectos en tanto experiencia sonora, Music ofQuality and Distinction fue un verdadero ejercicio seminal de pop posmodernista' },
+      { q: 'El new pop implicaba un renacimiento del interés del glam por el artificio' },
+    ] },
+  { id: 'scritti-politti',
+    note: 'Tras un colapso en 1980, Green se recupera en Gales leyendo a Derrida y Barthes y escuchando Off the Wall: si los márgenes ya no existen, hay que deconstruir el pop desde dentro del mainstream. «The \'Sweetest Girl\'» (lovers rock con Robert Wyatt), «Faithless», «Asylums in Jerusalem» con «Jacques Derrida» en la cara B, fundas que imitan artículos de lujo y la celebración del «deseo». Songs to Remember (1982) llega al número 12, pero Green convierte el colectivo en un proyecto solista con Bob Last y firma con Virgin bajo la empresa Jouissance.',
+    tracks: [
+      { a: 'Scritti Politti', t: 'The \'Sweetest Girl\'', y: 1981, ess: 1 },
+      { a: 'Scritti Politti', t: 'Faithless', y: 1982 },
+      { a: 'Scritti Politti', t: 'Asylums in Jerusalem', y: 1982 },
+      { a: 'Scritti Politti', t: 'Jacques Derrida', y: 1982 },
+      { a: 'Scritti Politti', t: 'Songs to Remember', y: 1982, ess: 1 },
+    ],
+    refs: [{ q: 'El postpunk casi mató a Green Gartside' }, { q: 'En otras palabras, Green quería ser el deconstructor del pop, el Derrida del Top 40' }] },
+  { id: 'heaven-17', name: 'British Electric Foundation y Heaven 17', family: 'newpop', start: 1980, end: 1984, place: 'Sheffield y Londres',
+    aka: ['B.E.F.'],
+    desc: 'Ware y Marsh, expulsados de The Human League, crean con Bob Last no una banda sino una «empresa de producción» (siguiendo a PiL, Robert Fripp, Chic Organization y Parliament-Funkadelic) que negocia con Virgin de igual a igual. Music for Stowaways (1981), solo en cassette, es la banda sonora para el walkman. Heaven 17, con Glenn Gregory: «(We Don\'t Need This) Fascist Groove Thang», vetada por la BBC por llamar fascista a Reagan; Penthouse and Pavement, funk electrónico seco con la caja Linn y el bajo de John Wilson, sobre ambición y clase, con la banda retratada como ejecutivos. Music of Quality and Distinction (1982), clásicos versionados con Tina Turner, Sandie Shaw o Billy Mackenzie: pop posmodernista seminal pero sin calor.',
+    artists: ['Heaven 17', 'British Electric Foundation', 'Martyn Ware', 'Ian Craig Marsh', 'Glenn Gregory', 'John Wilson', 'Bob Last', 'Tina Turner'],
+    labels: ['Virgin', 'B.E.F.'],
+    tracks: [
+      { a: 'B.E.F.', t: 'Music for Stowaways', y: 1981 },
+      { a: 'Heaven 17', t: '(We Don\'t Need This) Fascist Groove Thang', y: 1981, ess: 1 },
+      { a: 'Heaven 17', t: 'I\'m Your Money', y: 1981 },
+      { a: 'Heaven 17', t: 'Penthouse and Pavement', y: 1981, ess: 1 },
+      { a: 'Heaven 17', t: 'Play to Win', y: 1981 },
+      { a: 'B.E.F.', t: 'Music of Quality and Distinction Volume One', y: 1982 },
+      { a: 'B.E.F. feat. Tina Turner', t: 'Ball of Confusion', y: 1982 },
+    ],
+    influences: ['human-league', 'funk', 'postdisco'],
+    refs: [
+      { q: 'los primeros representantes del new pop qve propusieron reemplazar' },
+      { q: 'De hecho, la música de Heaven 17 era increíblemente prolija' },
+      { q: 'La ambición es el nexo conector de todo el álbum' },
+    ] },
+  { id: 'abc', name: 'ABC', family: 'newpop', start: 1980, end: 1985, place: 'Sheffield',
+    desc: 'De Vice Versa, grupo electrónico inspirado en Cabaret Voltaire, a la «visión funk» y el asalto al mainstream. Martin Fry, ex fanzinero, punk de corazón («todo el mundo puede ser una estrella») y Cole Porter adicto a las aliteraciones, encuentra en Trevor Horn (Buggles, Dollar), Anne Dudley y Gary Langan el sonido «sobrehumano»: «Dylan, pero con música disco». «Poison Arrow» y «The Look of Love» (1982) y The Lexicon of Love, número uno y disco de platino: trajes dorados, glamour de Las Vegas y Powell y Pressburger, distancia brechtiana y un cinismo postpunk sobre el amor heredero de Gang of Four, bajo el dolor real de un amante abandonado.',
+    artists: ['ABC', 'Martin Fry', 'Mark White', 'Stephen Singleton', 'Trevor Horn', 'Anne Dudley', 'Gary Langan'],
+    labels: ['Neutron', 'Phonogram'],
+    tracks: [
+      { a: 'ABC', t: 'Tears Are Not Enough', y: 1981 },
+      { a: 'ABC', t: 'Poison Arrow', y: 1982 },
+      { a: 'ABC', t: 'The Look of Love', y: 1982, ess: 1 },
+      { a: 'ABC', t: 'All of My Heart', y: 1982 },
+      { a: 'ABC', t: 'The Lexicon of Love', y: 1982, ess: 1 },
+      { a: 'ABC', t: 'Date Stamp', y: 1982 },
+    ],
+    influences: ['new-pop', 'glam-art', 'eurodisco', 'gang-of-four', 'cabaret-voltaire'],
+    refs: [
+      { q: 'La clave de The lexicon of Love estaba en la pequeña distancia entre las ambiciones de F y ry sus capacidades' },
+      { q: 'Con acordes melodramáticos tocados en un piano de cola' },
+      { q: 'A finales de 1982, ABC podía enorgullecerse de haber conseguido enormes logros en solo un año' },
+    ] },
+  { id: 'edimburgo',
+    note: 'Paul Haig, tras Josef K, monta su propia «empresa de producción», Rhythm of Life, para hacer temas bailables sin tocar en vivo.' },
+], 19);
+
+// Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
+POSTPUNK.add([
+  { id: 'heaven-17', tracks: [{ a: 'B.E.F. feat. Sandie Shaw', t: 'Anyone Who Had a Heart', y: 1982 }, { a: 'B.E.F. feat. Billy Mackenzie', t: 'The Secret Life of Arabia', y: 1982 }] },
+  { id: 'abc', tracks: [{ a: 'ABC', t: 'Many Happy Returns', y: 1982 }, { a: 'ABC', t: 'Valentine\'s Day', y: 1982 }] },
+  { id: 'postdisco', tracks: [{ a: 'Chic', t: 'I Want Your Love', y: 1978 }] },
+], 19);
