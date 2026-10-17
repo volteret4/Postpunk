@@ -13,7 +13,7 @@ POSTPUNK.add([
       { a: 'Gang of Four', t: 'Contract', y: 1979 },
       { a: 'Gang of Four', t: 'Not Great Men', y: 1979 },
       { a: 'Gang of Four', t: 'Guns Before Butter', y: 1979 },
-      { a: 'Gang of Four', t: 'Solid Gold', y: 1981 },
+      { a: 'Gang of Four', t: 'Solid Gold', y: 1981, yq: 'Gang of Four Solid Gold 1981 full album' },
       { a: 'Gang of Four', t: 'Paralysed', y: 1981 },
       { a: 'Gang of Four', t: 'What We All Want', y: 1981 },
       { a: 'Gang of Four', t: 'He\'d Send in the Army', y: 1981 },

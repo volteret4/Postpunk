@@ -7,7 +7,7 @@ POSTPUNK.add([
     labels: ['St. Pancras', 'Rough Trade'],
     tracks: [
       { a: 'Scritti Politti', t: 'Skank Bloc Bologna', y: 1978, ess: 1 },
-      { a: 'Scritti Politti', t: '4 A Sides', y: 1979 },
+      { a: 'Scritti Politti', t: '4 A Sides', y: 1979, yq: 'Scritti Politti 4 A-Sides 1979' },
       { a: 'Scritti Politti', t: 'Messthetics', y: 1979 },
       { a: 'Scritti Politti', t: 'Hegemony', y: 1979 },
       { a: 'Scritti Politti', t: 'P.A.s', y: 1979 },

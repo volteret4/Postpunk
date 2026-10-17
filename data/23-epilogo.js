@@ -13,7 +13,7 @@ POSTPUNK.add([
       { a: 'Hüsker Dü', t: 'Eight Miles High', y: 1984 },
       { a: 'The Smiths', t: 'The Smiths', y: 1984 },
       { a: 'Sonic Youth', t: 'Death Valley \'69', y: 1984 },
-      { a: 'Public Image Ltd.', t: 'Album', y: 1986 },
+      { a: 'Public Image Ltd.', t: 'Album', y: 1986, yq: '-' },
     ],
     influences: ['postcard', 'diy', 'velvet', 'psicodelia', 'noise-ny'],
     refs: [

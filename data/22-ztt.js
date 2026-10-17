@@ -5,7 +5,7 @@ POSTPUNK.add([
     artists: ['Afrika Bambaataa', 'Grandmaster Flash', 'World\'s Famous Supreme Team', 'Malcolm McLaren', 'Michael Holman', 'Marley Marl', 'Big Daddy Kane'],
     tracks: [
       { a: 'Malcolm McLaren', t: 'Buffalo Gals', y: 1982, ess: 1 },
-      { a: 'Malcolm McLaren', t: 'Duck Rock', y: 1983 },
+      { a: 'Malcolm McLaren', t: 'Duck Rock', y: 1983, yq: 'Malcolm McLaren Duck Rock full album' },
       { a: 'Malcolm McLaren', t: 'Double Dutch', y: 1983 },
       { a: 'Malcolm McLaren', t: 'Madam Butterfly', y: 1984 },
       { a: 'Big Daddy Kane', t: 'Ain\'t No Half-Steppin\'', y: 1988 },
@@ -27,7 +27,7 @@ POSTPUNK.add([
       { a: 'Propaganda', t: 'Duel', y: 1985 },
       { a: 'Propaganda', t: 'A Secret Wish', y: 1985 },
       { a: 'Grace Jones', t: 'Slave to the Rhythm', y: 1985 },
-      { a: 'Yes', t: '90125', y: 1983 },
+      { a: 'Yes', t: '90125', y: 1983, yq: 'Yes 90125 full album' },
     ],
     influences: ['abc', 'hip-hop', 'eurodisco', 'new-pop', 'daf'],
     refs: [
@@ -46,7 +46,7 @@ POSTPUNK.add([
       { a: 'Frankie Goes to Hollywood', t: 'Two Tribes', y: 1984, ess: 1 },
       { a: 'Frankie Goes to Hollywood', t: 'The Power of Love', y: 1984 },
       { a: 'Frankie Goes to Hollywood', t: 'Welcome to the Pleasuredome', y: 1984 },
-      { a: 'Frankie Goes to Hollywood', t: 'Liverpool', y: 1986 },
+      { a: 'Frankie Goes to Hollywood', t: 'Liverpool', y: 1986, yq: 'Frankie Goes to Hollywood Liverpool 1986 full album' },
       { a: 'Bronski Beat', t: 'Smalltown Boy', y: 1984 },
     ],
     influences: ['ztt', 'big-music', 'eurodisco', 'punk-77', 'daf'],

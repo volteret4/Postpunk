@@ -21,10 +21,10 @@ POSTPUNK.add([
       { a: 'Pere Ubu', t: 'Street Waves', y: 1976 },
       { a: 'Pere Ubu', t: 'Datapanik in the Year Zero', y: 1978 },
       { a: 'Pere Ubu', t: 'The Modern Dance', y: 1978, ess: 1 },
-      { a: 'Pere Ubu', t: 'Real World', y: 1978 },
+      { a: 'Pere Ubu', t: 'Real World', y: 1978, yq: '-' },
       { a: 'Pere Ubu', t: 'Dub Housing', y: 1978, ess: 1 },
       { a: 'Pere Ubu', t: 'Chinese Radiation', y: 1978 },
-      { a: 'Pere Ubu', t: 'New Picnic Time', y: 1979 },
+      { a: 'Pere Ubu', t: 'New Picnic Time', y: 1979, yq: '-' },
     ],
     influences: ['cleveland-proto', 'art-rock', 'velvet', 'krautrock'],
     refs: [
@@ -73,6 +73,6 @@ POSTPUNK.add([
 
 // Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
 POSTPUNK.add([
-  { id: 'pere-ubu', tracks: [{ a: 'Pere Ubu', t: 'Thriller!', y: 1978 }, { a: 'Pere Ubu', t: 'The Book Is on the Table' }] },
+  { id: 'pere-ubu', tracks: [{ a: 'Pere Ubu', t: 'Thriller!', y: 1978, yq: '-' }, { a: 'Pere Ubu', t: 'The Book Is on the Table' }] },
   { id: 'devo', tracks: [{ a: 'Devo', t: 'Shrivel-Up', y: 1978 }, { a: 'Devo', t: 'Slap Your Mammy', y: 1978 }, { a: 'Devo', t: 'Sloppy (I Saw My Baby Gettin\')', y: 1978 }, { a: 'Devo', t: 'Triumph of the Will', y: 1979 }, { a: 'Devo', t: 'Devo Corporate Anthem', y: 1980 }] },
 ], 5);

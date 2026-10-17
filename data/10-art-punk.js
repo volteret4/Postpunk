@@ -99,6 +99,6 @@ POSTPUNK.add([
 // Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
 POSTPUNK.add([
   { id: 'talking-heads', tracks: [{ a: 'Talking Heads', t: 'Warning Sign', y: 1978 }, { a: 'Talking Heads', t: 'Air', y: 1979 }, { a: 'Talking Heads', t: 'Animals', y: 1979 }, { a: 'Talking Heads', t: 'The Great Curve', y: 1980 }, { a: 'Talking Heads', t: 'Listening Wind', y: 1980 }, { a: 'Talking Heads', t: 'Seen and Not Seen', y: 1980 }, { a: 'Talking Heads', t: 'Houses in Motion', y: 1980 }] },
-  { id: 'wire', tracks: [{ a: 'Wire', t: 'Practice Makes Perfect', y: 1978 }, { a: 'Wire', t: 'Being Sucked in Again', y: 1978 }, { a: 'Wire', t: 'Mercy', y: 1978 }, { a: 'Wire', t: 'Maroon', y: 1978 }, { a: 'Wire', t: 'Two People in a Room', y: 1979 }, { a: 'Wire', t: 'The 15th', y: 1979 }] },
+  { id: 'wire', tracks: [{ a: 'Wire', t: 'Practice Makes Perfect', y: 1978 }, { a: 'Wire', t: 'Being Sucked in Again', y: 1978 }, { a: 'Wire', t: 'Mercy', y: 1978 }, { a: 'Wire', t: 'Marooned', y: 1978 }, { a: 'Wire', t: 'Two People in a Room', y: 1979 }, { a: 'Wire', t: 'The 15th', y: 1979 }] },
   { id: 'mission-of-burma', tracks: [{ a: 'Mission of Burma', t: 'Max Ernst', y: 1981 }, { a: 'Mission of Burma', t: 'This Is Not a Photograph', y: 1981 }] },
 ], 10);

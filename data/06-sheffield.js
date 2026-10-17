@@ -5,7 +5,7 @@ POSTPUNK.add([
     desc: 'La primera dosis de electrónica extrema para los chicos de Sheffield fue la banda sonora de Walter Carlos para La naranja mecánica; antes solo había atisbos en el Moog de Keith Emerson y los chorros de ruido de Eno en Roxy Music. Detrás asoman la música concreta, Morton Subotnick y los paisajes de Tangerine Dream.',
     artists: ['Walter Carlos', 'Morton Subotnick', 'Tangerine Dream', 'Keith Emerson'],
     tracks: [
-      { a: 'Walter Carlos', t: 'A Clockwork Orange (BSO)', y: 1971 },
+      { a: 'Walter Carlos', t: 'A Clockwork Orange (BSO)', y: 1971, yq: 'Wendy Carlos Clockwork Orange Title Music' },
       { a: 'Morton Subotnick', t: 'Silver Apples of the Moon', y: 1967 },
       { a: 'Tangerine Dream', t: 'Phaedra', y: 1974 },
     ],
@@ -17,7 +17,7 @@ POSTPUNK.add([
     tracks: [
       { a: 'The Future', t: 'Blank Clocks', y: 1977 },
       { a: 'The Future', t: 'Dancevision', y: 1977 },
-      { a: '2.3', t: 'Where to Now?', y: 1978 },
+      { a: '2.3', t: 'Where to Now?', y: 1978, yq: '2.3 Where to Now Fast Product 1978' },
     ],
     influences: ['glam-art', 'electronica-70', 'krautrock', 'eurodisco'],
     refs: [
@@ -57,7 +57,7 @@ POSTPUNK.add([
       { a: 'The Human League', t: 'Being Boiled', y: 1978, ess: 1 },
       { a: 'The Human League', t: 'Circus of Death', y: 1978 },
       { a: 'The Human League', t: 'The Dignity of Labour', y: 1979 },
-      { a: 'The Human League', t: 'Reproduction', y: 1979 },
+      { a: 'The Human League', t: 'Reproduction', y: 1979, yq: 'The Human League Reproduction 1979 full album' },
       { a: 'The Human League', t: 'Blind Youth', y: 1979 },
       { a: 'The Human League', t: 'Almost Medieval', y: 1979 },
       { a: 'The Human League', t: 'You\'ve Lost That Lovin\' Feelin\'', y: 1980 },

@@ -49,7 +49,7 @@ POSTPUNK.add([
     artists: ['Joanne Catherall', 'Susanne Sulley', 'Ian Burden', 'Jo Callis', 'Martin Rushent', 'Heaven 17'],
     tracks: [
       { a: 'The Human League', t: 'Empire State Human', y: 1979 },
-      { a: 'The Human League', t: 'Travelogue', y: 1980 },
+      { a: 'The Human League', t: 'Travelogue', y: 1980, yq: 'The Human League Travelogue 1980 full album' },
       { a: 'The Human League', t: 'Holiday \'80', y: 1980 },
       { a: 'The Human League', t: 'The Sound of the Crowd', y: 1981 },
       { a: 'The Human League', t: 'Love Action (I Believe in Love)', y: 1981 },

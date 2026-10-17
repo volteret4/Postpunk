@@ -49,7 +49,7 @@ POSTPUNK.add([
     desc: 'El fuego como estado ideal del ser: el free jazz de los sesenta (Fire Music de Archie Shepp), Miles Davis eléctrico, Roland Kirk, Sun Ra y el jazz etnodélico de Don Cherry alimentan a The Pop Group, Rip Rig & Panic y The Slits, y más tarde a la no wave neoyorquina.',
     artists: ['Archie Shepp', 'Miles Davis', 'Roland Kirk', 'Sun Ra', 'Don Cherry', 'Ornette Coleman'],
     tracks: [
-      { a: 'Archie Shepp', t: 'Fire Music', y: 1965 },
+      { a: 'Archie Shepp', t: 'Fire Music', y: 1965, yq: 'Archie Shepp Fire Music 1965 full album' },
       { a: 'Rahsaan Roland Kirk', t: 'Rip, Rig and Panic', y: 1965 },
       { a: 'Miles Davis', t: 'On the Corner', y: 1972 },
     ],
@@ -89,7 +89,7 @@ POSTPUNK.add([
 
 // Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
 POSTPUNK.add([
-  { id: 'pop-group', tracks: [{ a: 'The Pop Group', t: 'Savage Sea', y: 1979 }, { a: 'The Pop Group', t: 'Words Disobey Me', y: 1979 }, { a: 'The Pop Group', t: 'Blind Faith', y: 1980 }, { a: 'The Pop Group', t: 'Justice', y: 1980 }, { a: 'The Pop Group', t: 'Feed the Hungry', y: 1980 }] },
+  { id: 'pop-group', tracks: [{ a: 'The Pop Group', t: 'Savage Sea', y: 1979 }, { a: 'The Pop Group', t: 'Words Disobey Me', y: 1979 }, { a: 'The Pop Group', t: 'Blind Faith', y: 1980, yq: 'The Pop Group Blind Faith 1980' }, { a: 'The Pop Group', t: 'Justice', y: 1980, yq: 'The Pop Group Justice For How Much Longer' }, { a: 'The Pop Group', t: 'Feed the Hungry', y: 1980 }] },
   { id: 'slits', tracks: [{ a: 'The Slits', t: 'So Tough', y: 1979 }, { a: 'The Slits', t: 'Love und Romance', y: 1979 }, { a: 'The Slits', t: 'FM', y: 1979 }, { a: 'The Slits', t: 'Animal Space', y: 1981 }] },
   { id: 'psicodelia', tracks: [{ a: 'The Jimi Hendrix Experience', t: 'Third Stone from the Sun', y: 1967 }] },
 ], 3);

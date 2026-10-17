@@ -83,7 +83,7 @@ POSTPUNK.add([
     refs: [{ q: 'Green Garrside, acaso el primer músico postpunk en declarar que el pop era el futuro' }] },
   { id: 'gang-of-four',
     note: 'En 1983, irónicamente, Gang of Four intenta sonar como ABC y graba el «híper prolijo y vergonzoso» Hard.',
-    tracks: [{ a: 'Gang of Four', t: 'Hard', y: 1983 }] },
+    tracks: [{ a: 'Gang of Four', t: 'Hard', y: 1983, yq: 'Gang of Four Hard 1983 full album' }] },
 ], 20);
 
 // Otras canciones y discos citados en el capítulo (revisados con tools/mentions.py).
