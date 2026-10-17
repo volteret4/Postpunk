@@ -208,6 +208,12 @@
     return `<button class="chip" data-go="${id}"><i style="background:${FAMILIES[g.family].color}"></i>${esc(g.name)}</button>`;
   }
   const REFS = window.POSTPUNK_REFS || {};
+  // El libro en PDF (generado desde el ePub por tools/pdfpages.py): cada cita enlaza a su página.
+  // Se muestra la página impresa de la edición de Caja Negra; el PDF tiene su propia paginación.
+  const PDF = 'Postpunk_Simon_Reynolds.pdf';
+  const pageLink = (loc) => loc.pdf
+    ? `<a class="pg" href="${encodeURI(PDF)}#page=${loc.pdf}" target="_blank" rel="noopener" title="Abrir el libro en PDF por esta cita (pág. ${loc.pdf} del PDF)">pág. ${loc.page}</a>`
+    : `pág. ${loc.page}`;
   function mark(para, q) {
     const i = para.toLowerCase().replace(/’/g, "'").indexOf(q.toLowerCase().replace(/’/g, "'"));
     if (i < 0) return esc(para);
@@ -220,18 +226,28 @@
     const refs = g.refs.map((r) => ({ ...r, loc: REFS[r.q] })).sort((a, b) => (a.loc ? a.loc.page : 1e6) - (b.loc ? b.loc.page : 1e6));
     const others = g.chapters.filter((c) => !g.refs.some((r) => r.ch === c));
     if (!refs.length && !others.length) return '';
-    return `<h4>Pasajes del libro (${refs.length})</h4>${refs.map((r, i) => `<details class="ref"${i < 2 ? ' open' : ''}><summary class="where">${esc(chapterName(r.ch))}${r.loc ? ` · <b>pág. ${r.loc.page}</b>` : ''}</summary><blockquote>${r.loc ? mark(r.loc.para, r.q) : esc(r.q)}</blockquote></details>`).join('')}
+    return `<h4>Pasajes del libro (${refs.length})</h4>${refs.map((r, i) => `<details class="ref"${i < 2 ? ' open' : ''}><summary class="where">${esc(chapterName(r.ch))}${r.loc ? ` · <b>${pageLink(r.loc)}</b>` : ''}</summary><blockquote>${r.loc ? mark(r.loc.para, r.q) : esc(r.q)}</blockquote></details>`).join('')}
       ${others.length ? `<div class="tags">${others.map((c) => `<span>${esc(chapterName(c))}</span>`).join('')}</div>` : ''}
       <p class="fine">Páginas de la edición impresa (Caja Negra, Buenos Aires, 2016), recuperadas del escaneo del ePub; el texto conserva sus erratas de OCR.</p>`;
   }
   const YT = window.POSTPUNK_YT || {};
+  // Páginas que mencionan cada disco o canción (tools/pdfpages.py), como enlaces al PDF.
+  const PAGES = window.POSTPUNK_PAGES || {};
+  const pagesHtml = (t) => {
+    const ps = PAGES[`${t.a}|${t.t}`];
+    if (!ps) return '';
+    // Página impresa de Caja Negra (la de las citas); el enlace va a la del PDF.
+    const seen = new Set(), list = ps.filter(([, , n]) => !seen.has(n) && seen.add(n));
+    return ` <span class="pgs">${list.length > 1 ? 'págs.' : 'pág.'} ${list.map(([, p, n]) => `<a class="pg" href="${encodeURI(PDF)}#page=${p}" target="_blank" rel="noopener" title="Abrir el libro en PDF por esta página">${n ?? p}</a>`).join(' · ')}</span>`;
+  };
+
   function trackHtml(t, extra = '') {
     const v = YT[`${t.a}|${t.t}`];
     const search = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(`${t.a} ${t.t}`.replace(/\([^)]*\)/g, ''));
     const links = v
       ? `<button class="play" data-v="${esc(v.id)}" title="Reproducir aquí: ${esc(v.title)}">▶</button><a href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener" title="${esc(v.title)} · ${esc(v.channel)}">↗</a>`
       : `<a href="${search}" target="_blank" rel="noopener" title="Buscar en YouTube">🔍</a>`;
-    return `<li${t.ess ? ' class="ess" title="Disco clave según el libro"' : ''}><span class="tt">${t.ess ? '<i class="star">★</i> ' : ''}<b>${esc(t.a)}</b> — ${esc(t.t)} ${t.y ? `<span class="y">(${t.y})</span>` : ''}${extra}</span><span class="act">${links}</span></li>`;
+    return `<li${t.ess ? ' class="ess" title="Disco clave según el libro"' : ''}><span class="tt">${t.ess ? '<i class="star">★</i> ' : ''}<b>${esc(t.a)}</b> — ${esc(t.t)} ${t.y ? `<span class="y">(${t.y})</span>` : ''}${pagesHtml(t)}${extra}</span><span class="act">${links}</span></li>`;
   }
 
   // Un único reproductor en toda la página: se abre bajo el disco pulsado y se cierra al volver a pulsarlo.
@@ -470,6 +486,9 @@
     matches: trackMatches, isKey: (t) => t.ess, keyLabel: 'Solo discos clave ★', keyName: 'disco clave',
     where: (r) => r.chs.slice().sort((a, b) => a - b).map((c) => esc(chapterName(c))).join(' · '),
   });
+  // Pestaña «Menciones» (menciones.js, común a todas las webs de Music_Books).
+  Menciones({ all, FAMILIES, esc, trackHtml, togglePlayer, open, portadas, data: window.POSTPUNK_COVERS,
+    pageLink: (m) => pageLink({ pdf: m[1], page: m[2] ?? m[1] }) });
   function render() {
     $('#ftoggle').classList.toggle('active', !!state.q || state.off.size > 0);
     renderTimeline(); renderList(); renderDiscs('discs', false); renderDiscs('ess', true); renderByChapter(); portadas.render(); stickMain(); fitScrollers(); }
