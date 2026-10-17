@@ -1,6 +1,6 @@
 #!/bin/sh
 # Regenera todo a partir del ePub: texto por capítulos, citas localizadas, vídeos de YouTube e index.html.
-# Uso: tools/build.sh [--yt]   (--yt busca en YouTube los discos nuevos; tarda)
+# Uso: tools/build.sh [--yt]   (--yt busca en YouTube los discos nuevos y sus portadas en Last.fm, Deezer y Wikidata; tarda)
 set -e
 cd "$(dirname "$0")/.."
 EPUB=$(ls *.epub | head -n 1)
@@ -19,7 +19,10 @@ fi
 python3 -I tools/split.py build/txt build/spine.txt build/chapters > /dev/null
 node tools/check.js data
 python3 -I tools/refs.py data build/chapters/book.json
-if [ "$1" = "--yt" ]; then python3 -I tools/yt.py data | grep -v "^OK  " || true; fi
+if [ "$1" = "--yt" ]; then
+python3 -I tools/yt.py data | grep -v "^OK  " || true
+if [ -n "$LASTFM_API_KEY" ]; then python3 -I tools/covers.py; else echo "Sin LASTFM_API_KEY: no se actualizan las portadas"; fi
+fi
 tags=$(for f in data/[0-9]*.js; do printf '<script src="%s"></script>\\n' "$f"; done)
 python3 -I - "$tags" <<'PY'
 import re, sys
@@ -29,4 +32,4 @@ block = '<!-- capitulos:inicio -->\n' + sys.argv[1].replace('\\n', '\n') + '<!--
 s = re.sub(r'<!-- capitulos:inicio -->.*?<!-- capitulos:fin -->', block, s, flags=re.S)
 open(p, 'w').write(s)
 PY
-for f in data/*.js app.js; do node --check "$f"; done
+for f in data/*.js app.js covers.js; do node --check "$f"; done
